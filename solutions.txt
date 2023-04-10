@@ -1,11 +1,28 @@
-Crea un directorio nuevo llamado new_dir->mkdir newdir
+1. Crea un directorio nuevo llamado new_dir->mkdir newdir
 
-Imprime en consola Hello World->echo hello world
+2. Imprime en consola Hello World->echo hello world
 
-Elimina ese directorio->remove-item .\newdir\
+3. Elimina ese directorio->remove-item .\newdir\
 
-Copia el archivo sed.txt dentro de la carpeta lorem a la carpeta lorem-copy. TIP: Puede ser necesario crear la carpeta lorem-copy primero ->mkdir lorem-copy y luego copy-item .\lorem\sed.txt .\lorem-copy\ (ejecutado desde el directorio donde estan las dos carpetas Lorem y Lorem-copy)
+4. Copia el archivo sed.txt dentro de la carpeta lorem a la carpeta lorem-copy. TIP: Puede ser necesario crear la carpeta lorem-copy primero ->mkdir lorem-copy y luego copy-item .\lorem\sed.txt .\lorem-copy\ (ejecutado desde el directorio donde estan las dos carpetas Lorem y Lorem-copy)
 
-Muestra el contenido del archivo sed.txt dentro de la carpeta lorem. -> cd .\lorem\ y luego get-content .\sed.txt
+5. Muestra el contenido del archivo sed.txt dentro de la carpeta lorem. -> cd .\lorem\ y luego get-content .\sed.txt
 
-Muestra el contenido de los archivos at.txt y lorem.txt dentro de la carpeta lorem.
+6. Muestra el contenido de los archivos at.txt y lorem.txt dentro de la carpeta lorem->(ya dentro de la carpeta por el paso anterior) get-content .\at.txt y get-content .\lorem.txt
+
+7.Visualiza las primeras 3 líneas del archivo sed.txt dentro de la carpeta lorem-copy -> (dentro de carpeta Lorem-copy) get-content .\sed.txt -TotalCount 3
+
+8. Añade Homo homini lupus. al final de archivo sed.txt dentro de la carpeta lorem-copy-> (dentro de carpeta Lorem-copy) add-content .\sed.txt "Homo homini lupus"
+
+9. Encuentra al usuario activo en el sistema - > whoami
+
+10. Encuentra dónde estás en tu sistema de ficheros -> pwd 
+
+11. Lista los archivos que terminan por .txt en la carpeta lorem. -> (dentro de Lorem) dir *.txt
+
+12. Cuenta el número de líneas que tiene el archivo sed.txt dentro de la carpeta lorem ->(dentro de Lorem)-> (get-content .\sed.txt | Measure-Object -Line).Lines 
+
+13.  Cuenta el número de archivos que empiezan por lorem que están en este directorio y en directorios interno ->  (Get-ChildItem -Path 'C:\Users\anton\IRONHACK PROGRAMMING\1.1-lab_bash\' -Recurse -Filter "*lorem*" -File).Count
+
+14. Cuenta el número de apariciones del string et en at.txt dentro de la carpeta lorem -> (select-String .\at.txt -Pattern "et" -AllMatches).Matches.Count
+
