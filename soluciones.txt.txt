@@ -1,0 +1,62 @@
+1. (base) PS C:\Users\Juan> echo Hello World
+
+
+2. (base) PS C:\Users\Juan> mkdir new_dir
+
+
+    Directorio: C:\Users\Juan
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+d-----        10/04/2023     16:09                new_dir
+
+
+3. (base) PS C:\Users\Juan> rm -r new_dir
+
+
+4. (base) PS C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash> copy-item -path C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash\lorem\sed.txt -Destination C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash\lorem-copy
+
+
+5. (base) PS C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash> cd lorem
+(base) PS C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash\lorem> cat sed.txt
+
+
+6. (base) PS C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash\lorem> cat at.txt
+(base) PS C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash\lorem> cat lorem.txt
+
+
+7. (base) PS C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash\lorem-copy> Get-Content sed.txt | Select-Object -First 3
+
+
+8. (base) PS C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash\lorem-copy> echo "Homo homini lupus" >> sed.txt
+
+
+9. (base) PS C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash\lorem-copy> Get-Content sed.txt | Select-Object -Last 3
+
+
+10. (base) PS C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash\lorem-copy> whoami
+
+
+11. (base) PS C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash\lorem-copy> pwd
+
+Path
+----
+C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash\lorem-copy
+
+
+(base) PS C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash\lorem-copy>
+
+
+12. (base) PS C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash> ls lorem/*.txt
+
+
+    Directorio: C:\Users\Juan\Desktop\IronHack_apuntes\1.1-lab_bash\lorem
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----        10/04/2023     15:17            852 at.txt
+-a----        10/04/2023     15:17            448 lorem.txt
+-a----        10/04/2023     15:17            873 sed.txt
+
