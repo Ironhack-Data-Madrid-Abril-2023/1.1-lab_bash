@@ -1,0 +1,21 @@
+echo hello world
+mkdir new_dir
+rm -r new_dir
+mkdir lorem-copy
+cp sed.txt ../lorem-copy
+cat sed.txt
+cat at.txt lore.txt
+head -3 sed.txt
+echo ' homo homini lupus' >> sed.txt
+tail -3 sed.txt
+whoami
+pwd
+ls *.txt
+wc -l sed.txt
+find . -name "lorem*" | wc -l
+find . -name "et" | wc -l at.txt
+
+FICHERO
+$ touch list_files.sh
+echo ls
+README.md lorem solutions.ipynb
