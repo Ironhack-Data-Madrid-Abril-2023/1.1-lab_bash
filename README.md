@@ -34,6 +34,8 @@ README.md lorem solutions.ipynb
 
 * Elimina ese directorio.
 
+- rmdir new_dir
+
 * Copia el archivo `sed.txt` dentro de la carpeta lorem a la carpeta lorem-copy. TIP: Puede ser necesario crear la carpeta lorem-copy primero. 
 
 * Muestra el contenido del archivo `sed.txt` dentro de la carpeta lorem. 
