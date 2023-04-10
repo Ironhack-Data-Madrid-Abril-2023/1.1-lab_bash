@@ -38,6 +38,9 @@ README.md lorem solutions.ipynb
 
 * Copia el archivo `sed.txt` dentro de la carpeta lorem a la carpeta lorem-copy. TIP: Puede ser necesario crear la carpeta lorem-copy primero. 
 
+- mkdir lorem-copy
+- cp sed.txt C:\Users\Lorenzo\Desktop\'IRONHACK REPOSITORIES'\1.1-lab_bash\lorem_copy
+
 * Muestra el contenido del archivo `sed.txt` dentro de la carpeta lorem. 
 
 * Muestra el contenido de los archivos `at.txt` y `lorem.txt` dentro de la carpeta lorem. 
