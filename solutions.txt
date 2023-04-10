@@ -1,0 +1,47 @@
+
+* Imprime en consola `Hello World`.
+echo "Hello World"
+
+* Crea un directorio nuevo llamado `new_dir`.
+(base) PS C:\Users\river\Ironhack-data\1.1-lab_bash\lorem> New-Item -ItemType Directory -name new_dir
+
+* Elimina ese directorio.
+ remove-item C:\Users\river\Ironhack-data\1.1-lab_bash\new_dir
+
+* Copia el archivo `sed.txt` dentro de la carpeta lorem a la carpeta lorem-copy. TIP: Puede ser necesario crear la carpeta lorem-copy primero. 
+Copy-Item -Path C:\Users\river\Ironhack-data\1.1-lab_bash\lorem\sed.txt -Destination C:\Users\river\Ironhack-data\1.1-lab_bash\lorem-copy
+
+* Muestra el contenido del archivo `sed.txt` dentro de la carpeta lorem. 
+ get-content -path C:\Users\river\Ironhack-data\1.1-lab_bash\lorem\at.txt
+
+* Muestra el contenido de los archivos `at.txt` y `lorem.txt` dentro de la carp
+ get-content -path C:\Users\river\Ironhack-data\1.1-lab_bash\lorem\at.txt
+ get-content -path C:\Users\river\Ironhack-data\1.1-lab_bash\lorem\lorem.txt
+
+* Visualiza las primeras 3 líneas del archivo `sed.txt` dentro de la carpeta lorem-copy 
+(base) PS C:\Users\river\Ironhack-data\1.1-lab_bash\lorem-copy> get-content sed.txt -TotalCount 3
+
+* Añade `Homo homini lupus.` al final de archivo `sed.txt` dentro de la carpeta lorem-copy. 
+Add-Content -Path C:\Users\river\Ironhack-data\1.1-lab_bash\lorem-copy\sed.txt -Value 'Homo homini lupus.'
+
+* Visualiza las últimas 3 líneas del archivo `sed.txt` dentro de la carpeta lorem-copy. Deberías ver ahora `Homo homini lupeta lorem. 
+us.`. 
+ get-content -path C:\Users\river\Ironhack-data\1.1-lab_bash\lorem-copy\sed.txt -Tail 3
+
+* Encuentra al usuario activo en el sistema.
+(Get-WmiObject -Class Win32_ComputerSystem).UserName
+
+* Encuentra dónde estás en tu sistema de ficheros.
+pwd
+
+* Lista los archivos que terminan por `.txt` en la carpeta lorem.
+(Get-WmiObject -Class Win32_ComputerSystem).UserName
+
+* Cuenta el número de líneas que tiene el archivo `sed.txt` dentro de la carpeta lorem. 
+ (get-content -path C:\Users\river\Ironhack-data\1.1-lab_bash\lorem\sed.txt).Count
+
+* Cuenta el número de **archivos** que empiezan por `lorem` que están en este directorio y en directorios internos.
+(get-childitem -path C:\Users\river\Ironhack-data\1.1-lab_bash -filter "lorem*" -Recurse -File | Measure-object -Line).lines
+
+* Cuenta el número de apariciones del string `et` en `at.txt` dentro de la carpeta lorem
+(base) PS C:\Users\river\Ironhack-data\1.1-lab_bash\lorem> (Get-Content -Path .\at.txt -Raw) | Select-String -Pattern 'et' -AllMatches | Measure-Object -Line
