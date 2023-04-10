@@ -44,26 +44,57 @@ README.md lorem solutions.ipynb
 * Muestra el contenido del archivo `sed.txt` dentro de la carpeta lorem. 
 
     - cat sed.txt
-    
+
 * Muestra el contenido de los archivos `at.txt` y `lorem.txt` dentro de la carpeta lorem. 
+
+    - cat at.txt
+    - cat lorem.txt
 
 * Visualiza las primeras 3 líneas del archivo `sed.txt` dentro de la carpeta lorem-copy 
 
+    ANACONDA POWER SHELL
+    - Get-Content sed.txt | Select-Object -First 3
+    VISUAL STUDIO CODE
+    - head -n 3 sed.txt
+
 * Añade `Homo homini lupus.` al final de archivo `sed.txt` dentro de la carpeta lorem-copy. 
+
+    ANACONDA POWER SHELL
+    - Add-Content -Path sed.txt -Value "Homo homini lupus."
+    VISUAL STUDIO CODE
+    - echo "Homo homini lupus" >> archivo.txt
 
 * Visualiza las últimas 3 líneas del archivo `sed.txt` dentro de la carpeta lorem-copy. Deberías ver ahora `Homo homini lupus.`. 
 
+    ANACONDA POWER SHELL
+    - Get-Content sed.txt | Select-Object -Last 3
+    VISUAL STUDIO CODE
+    - tail -n 3 sed.txt
+
 * Encuentra al usuario activo en el sistema.
+
+    - whoami
 
 * Encuentra dónde estás en tu sistema de ficheros.
 
+    - pwd
+
 * Lista los archivos que terminan por `.txt` en la carpeta lorem.
+
+    - Get-ChildItem -Filter *.txt
 
 * Cuenta el número de líneas que tiene el archivo `sed.txt` dentro de la carpeta lorem. 
 
+    - gc sed.txt | Measure-Object -Line
+
 * Cuenta el número de **archivos** que empiezan por `lorem` que están en este directorio y en directorios internos.
 
-* Cuenta el número de apariciones del string `et` en `at.txt` dentro de la carpeta lorem. 
+    - (Get-ChildItem -Recurse -File -Filter "lorem*").Count
+
+* Cuenta el número de apariciones del string `et` en `at.txt` dentro de la carpeta lorem.
+
+    - Get-Content -Path .\lorem\at.txt | Select-String -Pattern "et" | Measure-Object | Select-Object -ExpandProperty Count
+
 
 ## Ficheros bash
 
