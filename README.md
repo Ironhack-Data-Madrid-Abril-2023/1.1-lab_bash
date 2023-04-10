@@ -26,9 +26,11 @@ README.md lorem solutions.ipynb
 
 * Imprime en consola `Hello World`.
 
-echo Hello World
+- echo Hello World
 
 * Crea un directorio nuevo llamado `new_dir`.
+
+- mkdir new_dir
 
 * Elimina ese directorio.
 
