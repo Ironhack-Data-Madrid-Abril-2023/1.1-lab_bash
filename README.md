@@ -26,23 +26,25 @@ README.md lorem solutions.ipynb
 
 * Imprime en consola `Hello World`.
 
-- echo Hello World
+    - echo Hello World
 
 * Crea un directorio nuevo llamado `new_dir`.
 
-- mkdir new_dir
+    - mkdir new_dir
 
 * Elimina ese directorio.
 
-- rmdir new_dir
+    - rmdir new_dir
 
 * Copia el archivo `sed.txt` dentro de la carpeta lorem a la carpeta lorem-copy. TIP: Puede ser necesario crear la carpeta lorem-copy primero. 
 
-- mkdir lorem-copy
-- cp sed.txt C:\Users\Lorenzo\Desktop\'IRONHACK REPOSITORIES'\1.1-lab_bash\lorem_copy
+    - mkdir lorem-copy
+    - cp sed.txt C:\Users\Lorenzo\Desktop\'IRONHACK REPOSITORIES'\1.1-lab_bash\lorem_copy
 
 * Muestra el contenido del archivo `sed.txt` dentro de la carpeta lorem. 
 
+    - cat sed.txt
+    
 * Muestra el contenido de los archivos `at.txt` y `lorem.txt` dentro de la carpeta lorem. 
 
 * Visualiza las primeras 3 líneas del archivo `sed.txt` dentro de la carpeta lorem-copy 
