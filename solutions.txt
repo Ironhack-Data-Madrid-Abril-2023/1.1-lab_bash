@@ -1,0 +1,17 @@
+echo hello world
+mkdir newdir
+Remove-Item .\newdir\
+copy-item .\lorem\sed.txt .\lorem-copy\
+get-content sed.txt
+get-content .\at.txt
+get-content .\lorem.txt
+get-content .\sed.txt -Head 3
+add-content .\sed.txt "Homo homini lupus."
+get-content .\sed.txt -Tail 3
+whoami
+pwd
+dir *.txt
+(Get-Content -Path "sed.txt" | Measure-Object -Line).Lines
+(dir -Path "C:\Users\alexi\OneDrive\" -Recurse -Filter "lorem").Count
+(Select-String .\at.txt -Pattern "et").Count
+
