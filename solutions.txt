@@ -1,0 +1,11 @@
+Crea un directorio nuevo llamado new_dir->mkdir newdir
+
+Imprime en consola Hello World->echo hello world
+
+Elimina ese directorio->remove-item .\newdir\
+
+Copia el archivo sed.txt dentro de la carpeta lorem a la carpeta lorem-copy. TIP: Puede ser necesario crear la carpeta lorem-copy primero ->mkdir lorem-copy y luego copy-item .\lorem\sed.txt .\lorem-copy\ (ejecutado desde el directorio donde estan las dos carpetas Lorem y Lorem-copy)
+
+Muestra el contenido del archivo sed.txt dentro de la carpeta lorem. -> cd .\lorem\ y luego get-content .\sed.txt
+
+Muestra el contenido de los archivos at.txt y lorem.txt dentro de la carpeta lorem.
