@@ -1,6 +1,9 @@
+Prueba modificacion minima de contenido de este documento
+
 # Bash Lab
 
 ## Intro
+Prueba 2
 
 Vamos a practicar con `bash`, un lenguaje de programación que se ejecuta en la línea de comandos!
 
